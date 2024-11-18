@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+/* @media(max-width: ) {
+            
+         } */
+
+body {
+  /* background-color: #2a2d48; */
+  font-family: "Raleway", sans-serif;
+
+  /* font-family: "Cardo", serif;
+      font-style: italic; */
+  /* font-family: "Open Sans", sans-serif; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+a,
+button,
+nav,
+ul,
+li,
+span {
+  margin: 0;
+  padding: 0;
+}
+/* universel end --------------------------------*/
+
+/* head css start */
+header {
+  background-color: #2a2d48;
+}
+.logo a {
+  font-size: 20px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-nav .nav-link {
+  color: white;
+}
+.nav ul li a.nav-link {
+  padding: 0px 4px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .nav ul li a i {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  /* .logo{
+         width: 100%;
+         text-align: center;
+      } */
+  /* .nav{
+         width: 100%;
+         text-align: center;
+      } */
+}
+header .header_info * {
+  color: white;
+}
+header .header_info {
+  padding: 150px 0px 0px 0px;
+}
+header .header_info h1 {
+  font-size: 65px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+header .header_info a {
+  font-family: "Raleway", sans-serif;
+  margin: 60px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* head css end ------------------------*/
+
+/* service css start */
+.service {
+}
+.service .service_card {
+}
+.service .service_card div i {
+  color: red;
+}
+.service .service_card h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 30px 0 25px 0;
+}
+.service .service_card p {
+  font-size: 14px;
+}
+/* service css end ---------------------------*/
+
+/* work css start */
+.work_hover {
+  position: relative;
+  cursor: pointer;
+}
+.work_hover .work_hover_effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 0,0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleX(0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 0%;
+  transform-origin: center;
+}
+.work_hover:hover .work_hover_effect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  font-size: 12px;
+  transition: 1s;
+  animation: color 2s;
+  transform-origin: center center;
+  transform: scaleX(1);
+ 
+}
+.work_hover_effect h4 {
+  font-size: 12px;
+}
+
+/* @keyframes color {
+  0% {
+    background-color: red;
+  }
+  40% {
+    background-color: green;
+  }
+  60% {
+    background-color: yellow;
+  }
+  90% {
+    background-color: cornflowerblue;
+  }
+  100% {
+    background-color: rgb(0, 38, 255);
+  }
+} */
+/* work css end -----------------*/
+
+/* client review css star */
+
+.client_img img {
+  height: 500px;
+  object-fit: cover;
+  text-align: center;
+}
+.review_textt *{
+   color: white;
+}
+.review_textt {
+
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   flex-direction: column;
+   padding: 0px 130px 40px 50px;
+   height: 500px;
+    background-color: #53354a;
+}
+.review_textt p{
+   font-family: "Cardo", serif !important;
+   font-style: italic !important;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+   background-color: #ffffff;
+   height: 15px;
+   width: 15px;
+   border-radius: 50%;
+   margin-bottom: 60px;
+ }
+
+
+ 
+@media screen and (min-device-width: 1px) and (max-device-width: 408px) {
+
+  .client_img img {
+    height: 400px;
+    object-fit: cover;
+    text-align: center;
+    
+    
+  }
+  .review_textt {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+    height: 400px;
+     background-color: #53354a;
+ }
+}
+/* client review css end */
+
+/* textimonial css start */
+
+/* textimonial css end--------------- */
+/* footer css star  */
+.footerc{
+   background-color: #3a3e64;
+} 
+.footr_socila i{
+   color: white !important;
+}
+/* footer css end */
